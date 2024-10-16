@@ -20,7 +20,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the rest of the application files to the container
-COPY . .
+COPY app .
 
 RUN python generate-model.py
 
