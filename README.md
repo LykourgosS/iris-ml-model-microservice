@@ -75,7 +75,7 @@ This will also start the server at `http://localhost:8000`, and you can access t
 
 ## Usage
 
-Once the server is running (via Docker or virtual environment), you can interact with the API.
+Once the server is running (via Docker or virtual environment), you can interact with the API `http://localhost:8000`, as mentioned above.
 
 ## API Endpoints
 
@@ -104,7 +104,9 @@ Once the server is running (via Docker or virtual environment), you can interact
 
 ## Example Request
 
-Here's an example of how to make a request to the `/predict` endpoint using `curl`:
+Here's an example of how to make a request to the `/predict` endpoint:
+
+- **Using** `curl`:
 
 ```bash
 curl -X POST "http://localhost:8000/predict" -H "Content-Type: application/json" -d '{
@@ -113,6 +115,20 @@ curl -X POST "http://localhost:8000/predict" -H "Content-Type: application/json"
     "petal_length": 1.4,
     "petal_width": 0.2
 }'
+```
+
+- **Using** `python`:
+
+```python
+import requests
+new_measurement = {
+    "sepal_length": 5.1,
+    "sepal_width": 3.5,
+    "petal_length": 1.4,
+    "petal_width": 0.2
+}
+response = requests.post('http://127.0.0.1:8000/predict', json=new_measurement)
+print(response.content)
 ```
 
 ## Sample Response
