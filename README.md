@@ -1,6 +1,8 @@
-# Iris ML Model Microservice
+# Iris Machine Learning Model Microservice
 
 A FastAPI microservice for predicting iris species based on sepal and petal dimensions. This project leverages machine learning to classify iris flowers into their respective species.
+
+![Iris Species](docs/images/petal-sepal-dimensions.png "Iris Species")
 
 ## Table of Contents
 
@@ -75,7 +77,7 @@ This will also start the server at `http://localhost:8000`, and you can access t
 
 ## Usage
 
-Once the server is running (via Docker or virtual environment), you can interact with the API `http://localhost:8000`, as mentioned above.
+Once the server is running (via Docker or virtual environment), you can interact with the API at `http://localhost:8000`, as mentioned above.
 
 ## API Endpoints
 
@@ -140,6 +142,8 @@ print(response.content)
 }
 ```
 
+![Iris Setosa predicted with probability ≈ 0.98](docs/images/iris-setosa-predicted.png "Iris Setosa predicted with probability ≈ 0.98")
+
 ## Dependencies
 
 This project requires the following Python packages:
@@ -158,4 +162,4 @@ Pickle module is a Python built-in module, meaning there is no need to install i
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
