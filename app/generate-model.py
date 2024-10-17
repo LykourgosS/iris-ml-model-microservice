@@ -18,10 +18,10 @@ X_train, X_test, y_train, y_test = train_test_split(
 classifier = LogisticRegression()
 classifier.fit(X_train, y_train)
 
-# save the model to disk
+# Save the model to disk
 pickle.dump(classifier, open('LRClassifier.pkl', 'wb'))
 
-# load the model from disk
+# Load the model from disk
 loaded_model = pickle.load(open('LRClassifier.pkl', 'rb'))
 
 result = loaded_model.score(X_test, y_test)
