@@ -1,5 +1,9 @@
 # Iris Machine Learning Model Microservice
 
+![FastAPI](https://img.shields.io/badge/fastapi-109989?logo=FastAPI&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2CA5E0?logo=docker&logoColor=white)
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white)](https://conventionalcommits.org)
+
 A FastAPI microservice for predicting iris species based on sepal and petal dimensions. This project leverages machine learning to classify iris flowers into their respective species.
 
 ![Iris Species](docs/images/petal-sepal-dimensions.png "Iris Species")
