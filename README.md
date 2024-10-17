@@ -6,7 +6,7 @@
 
 A FastAPI microservice for predicting iris species based on sepal and petal dimensions. This project leverages machine learning to classify iris flowers into their respective species.
 
-![Iris Species](docs/images/petal-sepal-dimensions.png "Iris Species")
+![Iris Dataset](docs/images/iris-dataset.png "Iris Species")
 
 ## Table of Contents
 
