@@ -17,6 +17,7 @@ A FastAPI microservice for predicting iris species based on sepal and petal dime
 - [Sample Response](#sample-response)
 - [Dependencies](#dependencies)
 - [License](#license)
+- [Attribution](#attribution)
 
 ## Installation
 
@@ -167,3 +168,11 @@ Pickle module is a Python built-in module, meaning there is no need to install i
 ## License
 
 This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
+
+## Attribution
+
+This project is based on the following blog post:
+
+- [How to deploy machine learning models as a microservice using fastapi](https://ashutoshtripathi.com/2021/02/15/how-to-deploy-machine-learning-models-as-a-microservice-using-fastapi/) by [Ashutosh Tripathi](https://ashutoshtripathi.com/author/ashutoshtripathi19/)
+
+Special thanks to the author for their guide on deploying a machine learning model as a microservice.
