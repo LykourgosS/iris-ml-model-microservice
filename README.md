@@ -6,15 +6,14 @@
 
 A FastAPI microservice for predicting iris species based on sepal and petal dimensions. This project leverages machine learning to classify iris flowers into their respective species.
 
-![Iris Dataset](docs/images/iris-dataset.png "Iris Species")
+![Iris Dataset](docs/images/iris-dataset.png "Iris Dataset")
 
 ## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
-- [Example Request](#example-request)
-- [Sample Response](#sample-response)
+- [Example Request and Response](#example-request-and-response)
 - [Dependencies](#dependencies)
 - [License](#license)
 - [Attribution](#attribution)
@@ -104,12 +103,12 @@ Once the server is running (via Docker or virtual environment), you can interact
 - **Response:**
   ```json
   {
-      "prediction": "<species>",
+      "prediction": <string>,
       "probability": <float>
   }
   ```
 
-## Example Request
+## Example Request and Response
 
 Here's an example of how to make a request to the `/predict` endpoint:
 
@@ -138,7 +137,7 @@ response = requests.post('http://127.0.0.1:8000/predict', json=new_measurement)
 print(response.content)
 ```
 
-## Sample Response
+And here is the response:
 
 ```json
 {
