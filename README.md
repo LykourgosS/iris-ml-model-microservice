@@ -1,8 +1,8 @@
 # Iris Machine Learning Model Microservice
 
-![FastAPI](https://img.shields.io/badge/fastapi-109989?logo=FastAPI&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-109989?logo=FastAPI&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2CA5E0?logo=docker&logoColor=white)
-[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white)](https://conventionalcommits.org)
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-FE5196?logo=conventionalcommits&logoColor=white)](https://conventionalcommits.org)
 
 A FastAPI microservice for predicting iris species based on sepal and petal dimensions. This project leverages machine learning to classify iris flowers into their respective species.
 
@@ -112,6 +112,8 @@ Once the server is running (via Docker or virtual environment), you can interact
 
 Here's an example of how to make a request to the `/predict` endpoint:
 
+### Request
+
 - **Using** `curl`:
 
 ```bash
@@ -137,6 +139,8 @@ response = requests.post('http://127.0.0.1:8000/predict', json=new_measurement)
 print(response.content)
 ```
 
+### Response
+
 And here is the response:
 
 ```json
@@ -159,10 +163,10 @@ This project requires the following Python packages:
 - FastAPI
 - Uvicorn
 
-You can find the complete list of dependencies in the `requirements.txt` file.
+You can find the complete list of dependencies with their versions in the [requirements.txt](/requirements.txt) file.
 
-**NOTE:**
-Pickle module is a Python built-in module, meaning there is no need to install it separately.
+> [!NOTE]
+> Pickle module is a Python built-in module, meaning there is no need to install it separately.
 
 ## License
 
